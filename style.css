@@ -118,13 +118,13 @@ body {
 /* Кнопки меню */
 
 .menu {
-    height: 40px;
     display: flex;
     overflow-x: scroll;
 }
 
 .menu__button {
     background-color: transparent;
+    height: 40px;
     border: none;
     padding: 0 16px 0 16px;
 }
