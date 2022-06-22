@@ -340,6 +340,7 @@ body {
         height: 82px;
         flex-wrap: wrap;
         margin-left: 32px;
+        overflow-x: none;
     }
 
     .upper-menu {
