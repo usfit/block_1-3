@@ -310,7 +310,7 @@ body {
 
     .content {
         height: 535px;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .size--large {
