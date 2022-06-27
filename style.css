@@ -69,46 +69,17 @@ body {
 }
 
 .upper-menu__item {
+    position: relative;
     width: 40px;
     height: 40px;
-    border: none;
-    border-radius: 50%;
 }
+
 
 .logo {
     position:relative;
     width: 100px;
     height: 50px;
-    background-image: url('icons/Group.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
-
-.upper-menu__item--burger {
-    background-image: url('icons/burger.svg');
-}
-
-.upper-menu__item--call {
-    background-image: url('icons/call.svg');
-}
-
-.upper-menu__item--chat {
-    background-image: url('icons/chat.svg');
-}
-
-.upper-menu__item--profile {
-    background-image: url('icons/profile.svg');
-    position: relative;
-}
-
-.upper-menu__item--repair {
-    background-image: url('icons/repair.svg');
-}
-
-.upper-menu__item--checkstatus {
-    background-image: url('icons/checkstatus.svg');
-}
-
 
 .upper-menu__text {
     margin-right: 8px;
@@ -120,6 +91,12 @@ body {
 .menu {
     display: flex;
     overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .menu__button {
@@ -129,10 +106,21 @@ body {
     padding: 0 16px 0 16px;
 }
 
-.menu__button:focus {
+.menu__button:active {
     background-color: white;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
+}
+
+.menu__button:hover {
+    background-color: white;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.menu__button:focus {
+    background-color: white;
+    border: 2px solid #B8FFEC;
 }
 
 .button__text {
@@ -164,6 +152,7 @@ body {
 
 .first-block {
     display: flex;
+    max-width: 1120px;
 }
 
 .first-block__text {
@@ -183,17 +172,17 @@ body {
     display: flex;
 }
 
-.read-more__icon {
-    margin-right: 8px;
-}
-
-.read-more__link {
+.link-text {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.2px;
     color: #1B1C21;
     font-weight: medium;
     text-decoration: none;
+}
+
+.read-more__icon {
+    margin-right: 8px;
 }
 
 .first-block__main {
@@ -307,15 +296,12 @@ body {
         margin-right: 24px;
         margin-bottom: 20px;
         justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .first-block__text {
-        max-width: 312px;
+        /* flex-wrap: wrap; */
     }
 
     .first-block__picture {
         max-height: 208px;
+        margin-left: 48px;
     }
 
 }
@@ -348,6 +334,11 @@ body {
         justify-content: flex-end;
     }
 
+    .upper-menu__item--big {
+        display: flex;
+        align-items: center;
+    }
+
     .interface {
         max-width: 1096px;
         display: flex;
@@ -368,7 +359,7 @@ body {
     .first-block__text {
         margin-left: 34px;
         max-width: 490px;
-        height: 160px;
+
         size: 14px;
         line-height: 143%;
         letter-spacing: 0.2px;
@@ -383,4 +374,5 @@ body {
         margin-left: 32px;
         margin-top: 14px;
     }
+
 }
