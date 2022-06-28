@@ -121,6 +121,7 @@ body {
 .menu__button:focus {
     background-color: white;
     border: 2px solid #B8FFEC;
+    border-radius: 6px;
 }
 
 .button__text {
@@ -332,6 +333,7 @@ body {
     .upper-menu {
         height: 48px;
         justify-content: flex-end;
+        border-bottom: none;
     }
 
     .upper-menu__item--big {
