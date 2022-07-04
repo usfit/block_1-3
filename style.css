@@ -163,19 +163,6 @@ body {
 
 /* Заголовок */
 
-.title {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    height: 40px;
-    align-items: center;
-    font-size: 28px;
-    line-height: 100%;
-    letter-spacing: -0.6px;
-    color: #1B1C21;
-}
-
 .title::before {
     content: '';
     position: absolute;
@@ -183,6 +170,15 @@ body {
     height: 40px;
     background-color: #41F6D7;
     border-radius: 0 4px 4px 0;
+}
+
+.title__text {
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Первый блок */
