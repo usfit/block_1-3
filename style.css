@@ -95,6 +95,10 @@ body {
     border-radius: 50%;
 }
 
+.upper-menu__icon, .upper-menu__item--big {
+    border-radius: 55%;
+}
+
 .upper-menu__item--big {
     display: flex;
     align-items: center;
@@ -163,6 +167,10 @@ body {
 
 /* Заголовок */
 
+.title {
+    position: relative;
+}
+
 .title::before {
     content: '';
     position: absolute;
@@ -170,6 +178,7 @@ body {
     height: 40px;
     background-color: #41F6D7;
     border-radius: 0 4px 4px 0;
+    top: -7px;
 }
 
 .title__text {
@@ -231,6 +240,7 @@ body {
 /* Экран до 320px */
 
 @media (max-width: 320px) {
+    
 
     .size--small {
         display: none;
@@ -257,7 +267,7 @@ body {
 
     .content {
         gap: 24px;
-        padding: 0 16px;
+        padding: 0 16px 24px 16px;
     }
 
     .title::before {
@@ -340,7 +350,7 @@ body {
     .content {
         justify-content: space-around;
         gap: 32px;
-        padding: 0 24px 0 24px;
+        padding: 0 24px 40px 24px;
     }
 
     .title::before {
